@@ -103,7 +103,8 @@ nav.scrolled{background:rgba(10,10,10,0.88);backdrop-filter:blur(14px);border-co
 .tag{font-size:12px;padding:4px 12px;border-radius:100px;background:var(--surface2);border:1px solid var(--border);color:var(--muted);}
 
 /* ── WORK ── */
-.work-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:60px;}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:60px;}
+@media(max-width:640px){.work-grid{grid-template-columns:1fr;}}
 .work-card{border-radius:24px;overflow:hidden;border:1px solid var(--border);background:var(--surface);transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s;}
 .work-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 24px 48px rgba(0,0,0,.5);}
 .work-thumb{height:200px;display:flex;align-items:center;justify-content:center;font-size:48px;position:relative;overflow:hidden;}
@@ -184,6 +185,7 @@ footer span{color:var(--accent);}
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#work">Campaigns</a>
+    <a href="#social-media">Social Media</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
@@ -253,9 +255,8 @@ footer span{color:var(--accent);}
         <div class="about-badge-text">Years Exp.</div>
       </div>
     </div>
-    <div class="about-content reveal-right delay-2">      <p>Motivated Digital Marketing Executive with hands-on experience in performance marketing, Meta Ads, and Google Ads. Skilled in lead generation, audience targeting, and campaign optimization to improve conversions and reduce cost per lead.</p>
-      <p>Currently pursuing an MBA in Marketing at Sinhgad Institute of Management & Computer Application, Savitribai Phule Pune University (2024–2026), while actively managing real-world digital campaigns at Svnture Solutions Pvt. Ltd. Holds a Bachelor of Agriculture Science from Sharadchandraji Pawar Institute, Daeoli University (2024).</p>
-      <div class="skills-grid">
+    <div class="about-content reveal-right delay-2">      <p>Digital Marketing Executive specializing in Educational Admission Marketing, with hands-on experience in Meta Ads, lead generation, social media management, content strategy, and campaign optimization. Currently driving student admission campaigns for JSPM Narhe Technical Campus, focusing on audience engagement, lead conversion, and data-driven marketing strategies to increase enrollments and strengthen brand presence.</p>
+      
         <div class="skill-chip">🎯 Meta Ads Manager</div>
         <div class="skill-chip">🔍 Google Search/Display</div>
         <div class="skill-chip">📊 Lead Generation</div>
@@ -275,7 +276,7 @@ footer span{color:var(--accent);}
       <div class="number-label">Year of Experience</div>
     </div>
     <div class="number-item reveal delay-2">
-      <div class="number-val">3+</div>
+      <div class="number-val">5+</div>
       <div class="number-label">Campaign Types Run</div>
     </div>
     <div class="number-item reveal delay-3">
@@ -392,6 +393,72 @@ footer span{color:var(--accent);}
         </div>
       </div>
     </div>
+    <div class="work-card reveal delay-1">
+      <div class="work-thumb work-thumb-1">
+        <span>🎓</span>
+        <div class="work-badge">JSPM Campus</div>
+      </div>
+      <div class="work-info">
+        <h3>Lead Generation for Admissions & Social Media Management</h3>
+        <p>Driving student admission campaigns for JSPM Narhe Technical Campus via targeted Meta Ads and Google Ads. Managing social media platforms to strengthen brand presence, increase engagement, and generate qualified leads for enrollment conversions.</p>
+        <div class="work-meta">
+          <span class="work-result">Admissions Lead Generation</span>
+          <div class="work-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAMPAIGN PERFORMANCE METRICS -->
+<section class="section" style="padding-top:0">
+  <p class="section-label reveal">Results</p>
+  <h2 class="section-title reveal delay-1">Campaign Performance<br>metrics.</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-top:50px;">
+    <div class="service-card reveal delay-1" style="text-align:center;">
+      <div style="font-family:'Syne',sans-serif;font-size:42px;font-weight:800;color:var(--accent);">500+</div>
+      <div style="font-size:14px;color:var(--muted);margin-top:8px;">Campaigns Managed</div>
+    </div>
+    <div class="service-card reveal delay-2" style="text-align:center;">
+      <div style="font-family:'Syne',sans-serif;font-size:42px;font-weight:800;color:var(--accent);">20+</div>
+      <div style="font-size:14px;color:var(--muted);margin-top:8px;">Leads Generated</div>
+    </div>
+    <div class="service-card reveal delay-3" style="text-align:center;">
+      <div style="font-family:'Syne',sans-serif;font-size:42px;font-weight:800;color:var(--accent);">5+</div>
+      <div style="font-size:14px;color:var(--muted);margin-top:8px;">Platforms Managed</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section class="section" id="social-media" style="padding-top:0">
+  <p class="section-label reveal">Social Media</p>
+  <h2 class="section-title reveal delay-1">Building brand presence<br>across platforms.</h2>
+  <div class="services-grid" style="margin-top:50px;">
+    <div class="service-card reveal delay-1">
+      <div class="service-icon">📲</div>
+      <h3>Social Media Management</h3>
+      <p>Managing brand presence across Instagram, Facebook, and LinkedIn. Creating, scheduling, and publishing content to grow organic engagement and reach target audiences.</p>
+      <div class="service-tags">
+        <span class="tag">Instagram</span><span class="tag">Facebook</span><span class="tag">LinkedIn</span>
+      </div>
+    </div>
+    <div class="service-card reveal delay-2">
+      <div class="service-icon">🎨</div>
+      <h3>Content Strategy & Creation</h3>
+      <p>Designing scroll-stopping creatives and writing compelling captions aligned with campaign goals, brand voice, and audience behavior insights.</p>
+      <div class="service-tags">
+        <span class="tag">Canva</span><span class="tag">Copywriting</span><span class="tag">Visual Content</span>
+      </div>
+    </div>
+    <div class="service-card reveal delay-3">
+      <div class="service-icon">📈</div>
+      <h3>Organic Growth & Engagement</h3>
+      <p>Growing follower base through consistent posting, community engagement, hashtag strategy, and audience interaction to build long-term brand loyalty.</p>
+      <div class="service-tags">
+        <span class="tag">Hashtag Research</span><span class="tag">Community Management</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -423,7 +490,7 @@ footer span{color:var(--accent);}
     <div class="service-card reveal delay-2">
       <div class="service-icon">🌾</div>
       <h3>Bachelor of Agriculture Science</h3>
-      <p style="color:var(--muted);font-size:14px;line-height:1.7;">Sharadchandraji Pawar Institute of Agricultural Sciences<br><strong style="color:var(--text)">Daeoli University</strong></p>
+      <p style="color:var(--muted);font-size:14px;line-height:1.7;">Sharadchandraji Pawar Institute of Agricultural Sciences<br><strong style="color:var(--text)">Dapoli University</strong></p>
       <div class="service-tags" style="margin-top:14px"><span class="tag">2024</span></div>
     </div>
     <div class="service-card reveal delay-3">
